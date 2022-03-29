@@ -28,3 +28,10 @@ import ipaddress
 import cmd_project
 for i in range(70):
     print("s",end='')
+
+
+print("hello")
+
+
+for i in range(50):
+    print('hye')
