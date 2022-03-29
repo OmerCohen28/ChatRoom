@@ -1,0 +1,34 @@
+This is an RFC document that explains the commands this app has to offer, what input they expect and what will the output be:
+
+note - These commands do apper in the app itself but without the additional info.
+
+    also the commands will be written into the message in the format they suppose to be - 
+    if they will be written diffrently the server will just not procces them and send an eror message.
+    One may use a single command at a time and its "code" for example "DM" will be written in the start of the message
+    or they will not be recognized by the server.
+
+None - this means if there is not command inputed - it will send a "broadcast" message which means everyone will be able to see 
+    the message you wrote.
+
+Echo - build: "echo ..." - the "Echo" command will make the message an echo, which means the server will echo it 
+    to your client but the other people will NOT see it.
+time - build: "time ...", the time command can contain additional data besided the time "code" however the server won't do anything with it.
+    the time command returns the current time at the server.
+HMM - build:"HMM", just like time, this command can contain additional data but the server won't procces it.
+    the HMM command returns how many poeple besideds you are connected to the chat room.
+DM - build: "DM name:<*user_name*> id:<*user_id*> msg:...." - this command does have a specific build and if it will not be followed 
+    the server will return an eror message. Note that you do not need to have both name and id, you can have both or either one,
+    name might apply to several people and id will only apply to one person. This command sends a direct message to the people who meet
+    the name/id criteria.
+CAP - build :"CAP password:<*new_password*>". This command changes the admin passowrd, after trying to send this message a window will
+    pop up and you will have to input the current admin password, if this message will be written incorrectly the server will send an eror message
+CN - build:"CN name:<*new_name*>". This command changes your name, which means your apperence to other people as well as DM's 
+    target for you will be changed, if this command will be written incorrectly the server will send an eror message.
+GAP - build:"GAP ...". This command previews all the current members connected along with their name and ID. 
+    This command is not case sensitive and as long as you have "GAP" at the begining it will work.
+kick - build:"kick id:<*user_id*>". This command can only be used by admin and what it does is that it kicks the user who
+    matches the ID. Keep in mind this command has to be written correctly and can only be used by admins.
+exit - build: "exit". This command exits the app and it IS case sensitive. if you write anything besides "exit" it will register as a
+    normal word.
+QUIT - build:"QUIT". This command shuts down the whole server, however it requires admin passowrd in order to do so. 
+    it has to be written exactly like that or else it will register as a normal word.
