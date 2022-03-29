@@ -30,8 +30,3 @@ for i in range(70):
     print("s",end='')
 
 
-print("hello")
-
-
-while True:
-  print("hello")
