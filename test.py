@@ -33,5 +33,5 @@ for i in range(70):
 print("hello")
 
 
-for i in range(50):
-    print('hye')
+while True:
+  print("hello")
