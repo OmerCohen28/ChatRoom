@@ -1,9 +1,8 @@
-This app was written by "Omer Cohen" known as the "Crying Tree" throught the long LONG month of february 2022.
+This app was written by Omer Cohen
 
 This app runs on python and requires several packages in order to run the client and server. - 
  - tkinter
  - PIL/pillow
- - recognized
  - socket
  - _thread
  - select
